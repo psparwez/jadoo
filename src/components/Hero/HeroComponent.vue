@@ -10,7 +10,7 @@ import HeroImages from './HeroImages.vue'
         BEST DESTINATIONS AROUND THE WORLD
       </h3>
       <h1
-        class="mb-4 text-4xl md:text-[4.75rem] font-medium leading-14 md:leading-[5.5rem] text-foreground-dark"
+        class="mb-4 text-[37px] md:text-[4.75rem] font-semibold sm:font-medium leading-[48px] md:leading-[5.5rem] text-foreground-dark"
       >
         Travel, enjoy and live a new and full life
       </h1>
