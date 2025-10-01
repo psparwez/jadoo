@@ -1,6 +1,7 @@
 <script lang="ts">
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/vue'
+import type SwiperClass from 'swiper'
 import { reactive } from 'vue'
 
 import 'swiper/css'
@@ -16,7 +17,7 @@ export default {
     SwiperSlide,
   },
   setup() {
-    const onSwiper = (swiper) => {
+    const onSwiper = (swiper: SwiperClass) => {
       console.log(swiper)
     }
     const onSlideChange = () => {
