@@ -9,7 +9,7 @@ import TripComponent from '@/components/Trip/TripComponent.vue'
 import { useHead } from '@vueuse/head'
 
 useHead({
-  title: 'Travel the World | Jodoo',
+  title: 'Jadoo Travel - Explore the World',
   meta: [
     { name: 'viewport', content: 'width=device-width, initial-scale=1.0' },
     {
@@ -21,6 +21,21 @@ useHead({
       name: 'keywords',
       content: 'travel, vacation, destinations, tours, Jodoo, travel planning, trips, holidays',
     },
+    { property: 'og:title', content: 'Jadoo Travel - Explore the World' },
+    {
+      property: 'og:description',
+      content: 'Discover unforgettable travel experiences with Jadoo.',
+    },
+    { property: 'og:image', content: '/jadoo_banner.jpg' },
+    { property: 'og:url', content: 'https://jadoo-travel-ps.vercel.app' },
+    { property: 'og:type', content: 'website' },
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:title', content: 'Jadoo Travel - Explore the World' },
+    {
+      name: 'twitter:description',
+      content: 'Discover unforgettable travel experiences with Jadoo.',
+    },
+    { name: 'twitter:image', content: '/jadoo_banner.jpg' },
     { name: 'author', content: 'Jodoo Travel Team (Build by @psparwez)' },
     { name: 'theme-color', content: '#fd6832' },
   ],
