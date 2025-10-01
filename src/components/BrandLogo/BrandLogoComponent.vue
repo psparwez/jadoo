@@ -7,7 +7,7 @@
       >
         <a href="#" class="flex justify-center items-center">
           <svg
-            class="h-6 md:h-6 md:h-9 hover:text-gray-900 dark:hover:text-white"
+            class="h-6 md:h-9"
             viewBox="0 0 125 35"
             fill="currentColor"
             xmlns="http://www.w3.org/2000/svg"
@@ -22,7 +22,7 @@
         </a>
         <a href="#" class="flex justify-center items-center">
           <svg
-            class="h-6 md:h-9 hover:text-gray-900 dark:hover:text-white"
+            class="h-6 md:h-9"
             viewBox="0 0 86 29"
             fill="currentColor"
             xmlns="http://www.w3.org/2000/svg"
@@ -63,7 +63,7 @@
 
         <a href="#" class="flex justify-center items-center">
           <svg
-            class="h-6 md:h-9 hover:text-gray-900 dark:hover:text-white"
+            class="h-6 md:h-9"
             viewBox="0 0 124 38"
             fill="currentColor"
             xmlns="http://www.w3.org/2000/svg"
@@ -76,7 +76,7 @@
         </a>
         <a href="#" class="flex justify-center items-center">
           <svg
-            class="h-6 md:h-9 hover:text-gray-900 dark:hover:text-white"
+            class="h-6 md:h-9"
             viewBox="0 0 137 37"
             fill="currentColor"
             xmlns="http://www.w3.org/2000/svg"
