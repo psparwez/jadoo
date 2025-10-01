@@ -1,48 +1,48 @@
 # Jadoo
 
-This template should help get you started developing with Vue 3 in Vite.
+Jadoo is a modern and responsive travel web landing page designed to showcase travel destinations and services, helping users plan their perfect vacation.
 
-## Recommended IDE Setup
+## :camera: Demo Screenshots
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+![Banner Image](/public/jadoo_banner.jpg)
 
-## Recommended Browser Setup
+## Technologies Used
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+- Vue 3
+- Swiper.js for sliders
+- Tailwind CSS for styling
 
-## Type Support for `.vue` Imports in TS
+## Installation
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+1. Clone the repository:
 
-## Customize configuration
+```bash
+git clone https://github.com/psparwez/jadoo.git
+```
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+2. Navigate to the project folder:
 
-## Project Setup
+```bash
+ cd jadoo
+```
 
-```sh
+3. Install dependencies:
+
+```bash
 pnpm install
 ```
 
-### Compile and Hot-Reload for Development
+4. Run the development server:
 
-```sh
-pnpm dev
+```bash
+npm run dev
 ```
 
-### Type-Check, Compile and Minify for Production
+## Usage
 
-```sh
-pnpm build
-```
+Open your browser and go to `http://localhost:3000` to see the landing page.
 
-### Lint with [ESLint](https://eslint.org/)
+## Design Credit
 
-```sh
-pnpm lint
-```
+If you want to check out the original design, here is the link:  
+[Open Figma Design](https://www.figma.com/community/file/993910904620677970)
