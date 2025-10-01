@@ -1,0 +1,195 @@
+@import 'tailwindcss';
+
+:root {
+  --font-poppins: 'Poppins', sans-serif;
+  --font-volkhov: 'Volkhov', serif;
+
+  --background: #fff;
+  --foreground: #212832;
+  /* --foreground-dark: #181e4b; */
+  --foreground-dark: #111827;
+
+  --border: #212832;
+  --primary: #df6951;
+  --secondry: #f1a501;
+
+  --muted-foreground: #5e6282;
+
+  --max-width: 1200px;
+}
+
+@theme inline {
+  --font-poppins: var(--font-poppins);
+  --font-valkhov: var(--font-volkhov);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-foreground-dark: var(--foreground-dark);
+  --color-primary: var(--primary);
+  --color-secondry: var(--secondry);
+
+  --color-border: var(--border);
+
+  --color-muted-foreground: var(--muted-foreground);
+}
+
+body,
+html {
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  body {
+    @apply bg-background overflow-x-hidden text-foreground font-poppins;
+    background-image: url('../assets/header-bg.png');
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+
+  button {
+    @apply cursor-pointer disabled:cursor-not-allowed disabled:opacity-80;
+  }
+}
+
+@layer utilities {
+  .section__container {
+    @apply mx-auto w-full py-20 px-4;
+    max-width: var(--max-width);
+  }
+  .nav__container {
+    @apply mx-auto w-full p-4;
+    max-width: var(--max-width);
+  }
+  .header__image img {
+    max-width: 550px;
+    width: 100%;
+    margin-inline: auto;
+  }
+  .section__header {
+    @apply text-3xl leading-9 lg:text-5xl font-semibold lg:leading-[3.75rem] text-foreground-dark;
+
+    & > span {
+      @apply text-primary;
+    }
+  }
+  .section__subheader {
+    @apply mb-4 text-base text-muted-foreground font-medium;
+  }
+  .btn {
+    @apply py-4 px-6 outline-none border-none text-base bg-secondry rounded-[5px] text-white;
+    box-shadow: 2px 2px 20px rgba(241, 165, 1, 0.4);
+  }
+  .card__shadow {
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.trip__image img {
+  max-width: 425px;
+  width: 100%;
+  margin-inline: auto;
+}
+
+.trip__image {
+  grid-area: 1/2/2/3;
+}
+
+.instagram__icon {
+  background: conic-gradient(
+    from 180deg at 50% 50%,
+    #b8d2f1 0%,
+    #f289aa 17%,
+    #c68bf0 29%,
+    #d164da 43%,
+    #c963e8 61%,
+    #bfc2e8 72%,
+    #ffc999 80%,
+    #d0d8c9 88%,
+    #bad0f1 93%,
+    #ced8cb 100%,
+    #ffffff 100%
+  );
+}
+
+a,
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}
+
+img {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  pointer-events: none;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: static !important;
+  width: auto !important;
+  height: auto !important;
+  margin: 0 !important;
+}
+
+/* Transition for mobile navbar */
+.mobile-nav-enter-active,
+.mobile-nav-leave-active {
+  transition: all 0.3s ease;
+}
+
+.mobile-nav-enter-from,
+.mobile-nav-leave-to {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.mobile-nav-enter-to,
+.mobile-nav-leave-from {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.icon-slide-fade-enter-active,
+.icon-slide-fade-leave-active {
+  transition: all 0.35s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  position: absolute; /* Needed to prevent layout shift */
+}
+
+.icon-slide-fade-enter-from {
+  opacity: 0;
+  transform: translateX(-10px) scale(0.8);
+}
+.icon-slide-fade-enter-to {
+  opacity: 1;
+  transform: translateX(0) scale(1);
+}
+
+.icon-slide-fade-leave-from {
+  opacity: 1;
+  transform: translateX(0) scale(1);
+}
+.icon-slide-fade-leave-to {
+  opacity: 0;
+  transform: translateX(10px) scale(0.8);
+}
+
+/* Slide + fade transition for header */
+.header-slide-fade-enter-active,
+.header-slide-fade-leave-active {
+  transition: all 0.4s cubic-bezier(0.65, 0, 0.35, 1);
+}
+.header-slide-fade-enter-from {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+.header-slide-fade-enter-to {
+  opacity: 1;
+  transform: translateY(0);
+}
