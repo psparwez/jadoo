@@ -1,6 +1,8 @@
 <script lang="ts" setup></script>
 <template>
-  <section class="bg-[#DFD7F9]/20 section__container rounded-[6rem_1rem_1rem_1rem] relative my-16">
+  <section
+    class="bg-[#DFD7F9]/20 section__container rounded-[6rem_1rem_1rem_1rem] relative sm:my-9 md:my-12 lg:my-16"
+  >
     <div class="text-center flex-col flex gap-10 lg:p-4">
       <h3
         class="text-2xl lg:text-3xl font-semibold w-full md:max-w-[80%] lg:leading-12 mx-auto text-muted-foreground"
@@ -11,33 +13,32 @@
       <div
         class="bg-white w-full flex gap-2 border-2 border-white max-w-lg py-2.5 pl-5 pr-3 rounded-2xl flex-col sm:flex-row items-center mx-auto"
       >
-       <div class="flex gap-2 w-full items-center">
- <span>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
-            viewBox="0 0 21 18"
-            fill="none"
-          >
-            <path
-              d="M4 6L9.4 10.05C9.75556 10.3167 10.2444 10.3167 10.6 10.05L16 6"
-              stroke="#39425D"
-              stroke-linecap="round"
-            />
-            <rect x="0.5" y="0.5" width="20" height="17" rx="4.5" stroke="#39425D" />
-          </svg>
-        </span>
-        <input
-          autocomplete="off"
-          class="w-full p-2 border-none outline-none"
-          type="text"
-          placeholder="Your Email"
-          name=""
-          id=""
-        />
-
-       </div>
+        <div class="flex gap-2 w-full items-center">
+          <span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 21 18"
+              fill="none"
+            >
+              <path
+                d="M4 6L9.4 10.05C9.75556 10.3167 10.2444 10.3167 10.6 10.05L16 6"
+                stroke="#39425D"
+                stroke-linecap="round"
+              />
+              <rect x="0.5" y="0.5" width="20" height="17" rx="4.5" stroke="#39425D" />
+            </svg>
+          </span>
+          <input
+            autocomplete="off"
+            class="w-full p-2 border-none outline-none"
+            type="text"
+            placeholder="Your Email"
+            name=""
+            id=""
+          />
+        </div>
         <button
           class="bg-gradient-to-r w-full sm:w-auto from-[#ff946d] to-[#ff7d68] text-white h-12 px-4 rounded-xl"
         >

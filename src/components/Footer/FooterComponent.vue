@@ -24,9 +24,9 @@ const footerData = reactive({
 <template>
   <footer class="border-t border-border/10">
     <div
-      class="section__container grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5"
+      class="section__container grid gap-8 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5"
     >
-      <div>
+      <div class="">
         <a href="/" class="text-[1.75rem] font-semibold text-foreground-dark">
           Jad<span class="text-primary">oo</span>.</a
         >

@@ -19,7 +19,7 @@ const Destinations = reactive(destinations)
         <img
           :src="item.image"
           :alt="item.location"
-          class="w-full object-cover transition-transform duration-300 group-hover:scale-[1.03] max-h-[200px] min-h-[200px] sm:max-h-auto sm:min-h-[368px] group-hover:opacity-95"
+          class="w-full object-cover transition-transform duration-300 group-hover:scale-[1.03] max-h-[240px] min-h-[240px] sm:max-h-auto sm:min-h-[368px] group-hover:opacity-95"
         />
         <div class="py-4 px-6">
           <div class="mb-4 flex items-center justify-between gap-4">

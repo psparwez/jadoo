@@ -12,8 +12,8 @@ import TrimImage from '@/assets/trip.png'
     <div>
       <h3 class="section__subheader">EASY & FAST</h3>
       <h2 class="section__header">Book Your Next Trip In 3 Easy Steps</h2>
-      <ul class="mt-8 grid gap-8">
-        <li class="flex sm:items-center items-start sm:flex-row flex-col gap-4">
+      <ul class="mt-8 grid gap-3 divide-y divide-zinc-100">
+        <li class="flex sm:items-center pb-5 items-start sm:flex-row flex-col gap-4">
           <span
             class="size-14 inline-flex items-center justify-center shrink-0 text-[1.75rem] text-white rounded-2xl bg-[#f0bb1f]"
           >
@@ -37,7 +37,7 @@ import TrimImage from '@/assets/trip.png'
             </p>
           </div>
         </li>
-        <li class="flex sm:items-center items-start sm:flex-row flex-col gap-4">
+        <li class="flex sm:items-center pb-5 items-start sm:flex-row flex-col gap-4">
           <span
             class="size-14 inline-flex items-center justify-center shrink-0 text-[1.75rem] text-white rounded-2xl bg-[#f15a2b]"
           >
@@ -61,7 +61,7 @@ import TrimImage from '@/assets/trip.png'
             </p>
           </div>
         </li>
-        <li class="flex sm:items-center items-start sm:flex-row flex-col gap-4">
+        <li class="flex sm:items-center pb-5 items-start sm:flex-row flex-col gap-4">
           <span
             class="size-14 inline-flex items-center justify-center shrink-0 text-[1.75rem] text-white rounded-2xl bg-[#006380]"
           >
